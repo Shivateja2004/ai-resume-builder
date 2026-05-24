@@ -5,8 +5,8 @@ import { errorHandler, notFoundHandler } from './middleware/error.middleware.js'
 
 const app = express();
 
-// --- CORS (strict but working) ---
-const allowedOrigin = "https://ai-resume-builder-powered-six.vercel.app";
+// --- CORS ---
+const allowedOrigin = "https://ai-resume-builder-40mof9ewn-shivatejas-projects-f629e9b9.vercel.app";
 
 app.use(cors({
   origin: allowedOrigin,
@@ -15,8 +15,6 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-// 🔥 IMPORTANT: handle preflight explicitly
-// backend app.js
 app.options('/{*splat}', cors());
 
 // --- Middleware ---
