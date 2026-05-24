@@ -6,7 +6,7 @@ import { errorHandler, notFoundHandler } from './middleware/error.middleware.js'
 const app = express();
 
 // --- CORS ---
-const allowedOrigin = "https://ai-resume-builder-40mof9ewn-shivatejas-projects-f629e9b9.vercel.app";
+const allowedOrigin = "https://ai-resume-builder-git-main-shivatejas-projects-f629e9b9.vercel.app";
 
 app.use(cors({
   origin: allowedOrigin,
