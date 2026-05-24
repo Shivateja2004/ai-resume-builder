@@ -16,7 +16,8 @@ app.use(cors({
 }));
 
 // 🔥 IMPORTANT: handle preflight explicitly
-app.options('*', cors());
+// backend app.js
+app.options('/{*splat}', cors());
 
 // --- Middleware ---
 app.use(express.json({ limit: '10mb' }));
